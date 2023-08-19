@@ -1,0 +1,240 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top:0px;
+
+    
+
+   
+}
+
+.logo img {
+    width: 100px; 
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.nav-links li {
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+.nav-links li a {
+  
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size:large;
+   
+}
+.nav-links li a:hover{
+   
+    background-color:#FF4500 ;
+    color: white;
+    border-radius: 30%;
+    transition: 1s ;
+    
+}
+
+.contact-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-btn a:hover {
+    background-color: #FF6347;
+}
+
+
+
+.menu-slide{
+    height: 700px;
+    width: 100%;
+    background-image: url(menu-bg1.jpg);
+    background-size: cover;
+    position:relative;
+    top: 25px;
+}
+
+.menu-slide p{
+    font-size: 100px;
+    color: #FF4500;
+    position: relative;
+    top: 260px;
+    left: 300px;
+    font-family: papyrus;
+    overflow: hidden; 
+    transition: transform 5s ease;
+
+}
+
+.menu-slide p:hover{
+    transform: scale(1.3);
+    font-weight: bolder;
+    
+}
+
+.menu-heading{
+    font-family: cursive;
+    text-align: center;
+    color:#FF4500 ;
+    position: relative;
+    top:50px;
+    
+    
+
+}
+.home-heading:hover{
+    text-decoration: underline;
+}
+.food{
+    height:350px;
+    width:600px;
+   
+    position :relative;
+    background-color: rgb(255, 255, 255);
+    left: 50px;
+    top: 30px;
+    border-radius:  100px;
+    
+}
+.food:hover{
+    box-shadow: 5px 2px 5px 1px #FF4500;
+    transform: scale(1);
+    transition: box-shadow 0.5s ease-in-out 0s;
+}
+
+.food-image{
+    height: 250px;
+    width:250px;
+    border-radius: 50%;
+    position :absolute;
+    top:35px;
+    left: 20px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+
+}
+.food-image img{
+    height: 310px;
+    width: 310px;
+   position: relative;
+   left: -25px;
+   top:-25px;
+    object-fit: cover;
+    overflow: hidden; 
+    transition: transform 1s ease;
+}
+
+.food-image img:hover{
+    transform: scale(1.1);
+   
+  
+}
+
+.food-content{
+    position: relative;
+    left: 350px;
+    top:100px;
+}
+
+.food-content h2{
+    color: rgb(236, 236, 72);
+}
+
+.non-veg-foods{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 40px; 
+    position: relative;
+    top: 50px;
+    background-color: #fbe7e4;
+    width: 1600px;
+    height: 1700px;
+}
+
+.veg-foods{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 40px; 
+    position: relative;
+    top: 50px;
+    background-color: #cbf4cc;
+    width: 1600px;
+    height: 1700px;
+}
+
+.veg-foods .food:hover{
+    box-shadow: 6px 4px 5px 1px hsl(120, 100%, 50%);
+    transition: box-shadow 0.5s ease-in-out 0s;
+    
+}
+
+.menu-veg-heading{
+    font-family: cursive;
+    text-align: center;
+    color:hsl(120, 100%, 50%);
+    position: relative;
+    top:50px;
+
+}
+.menu-veg-heading:hover{
+    text-decoration: underline;
+}
+.non-veg-food-details h1:hover{
+    text-decoration: underline;
+}
+
+.veg-food-details{
+    position: relative;
+    top: 50px;
+}
+
+.veg-order{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: hsl(120, 100%, 50%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.veg-order a{
+    text-decoration: none;
+    color: white;
+}
+.veg-order:hover{
+    background-color:hsl(120, 87%, 68%) ;
+}
+
+.footer{
+    width: 1600px;
+    height: 100px;
+    position: relative;
+    bottom: 0px;
+    top :80px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+body{
+    overflow-x: hidden;
+}

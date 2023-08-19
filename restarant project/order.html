@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Restaurant Logo" >
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Back to Menu</a></li>
+        </ul>
+        <div class="contact-btn">
+            <a href="contact.html">Contact </a>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+        <h2>Food Order Form</h2>
+        <form action="/submit_order" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <a href="delivery.html">Place Order</a>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
